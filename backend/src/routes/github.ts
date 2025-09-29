@@ -15,7 +15,7 @@ const repoUrlSchema = z.object({
   url: z.string().url()
 });
 
-// Get full repository analytics
+// Full Repo Analysis
 router.get('/analyze/:owner/:repo', async (req, res, next) => {
   try {
     const { owner, repo } = repoParamsSchema.parse(req.params);
@@ -82,18 +82,3 @@ router.get('/commits/:owner/:repo', async (req, res, next) => {
 });
 
 export { router as githubRoutes };
-
-// src/utils/validation.ts
-export function validateRepoUrl(url: string): { owner: string; repo: string } {
-  const regex = /^https:\/\/github\.com\/([^\/]+)\/([^\/]+?)(?:\/|\.git)?$/;
-  const match = url.match(regex);
-  
-  if (!match) {
-    throw new Error('Invalid GitHub repository URL');
-  }
-  
-  return {
-    owner: match[1],
-    repo: match[2]
-  };
-}
