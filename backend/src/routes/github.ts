@@ -1,7 +1,6 @@
 import express from 'express';
 import { z } from 'zod';
 import { githubService } from '../services/githubService';
-//@ts-ignore
 import { validateRepoUrl } from '../utils/validation';
 
 const router = express.Router();
