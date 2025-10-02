@@ -69,7 +69,7 @@ cp .env.example .env
 Update `.env` with your configuration:
 
 ```env
-PORT=5000
+PORT=
 NODE_ENV=
 GITHUB_TOKEN=your_github_personal_access_token_here
 CORS_ORIGIN=http://localhost:3000
