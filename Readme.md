@@ -113,16 +113,6 @@ npm start
 
 ---
 
-## Usage
-
-1. Enter any GitHub repository URL (e.g., `https://github.com/facebook/react`)
-2. Click the **Analyze** button
-3. View comprehensive analytics and insights about the repository
-4. Compare two repositories to get health grading and insights
-5. Export the results in **PDF** or **JSON** format
-
----
-
 ## Getting a GitHub Token
 
 1. Go to GitHub **Settings → Developer settings → Personal access tokens**
